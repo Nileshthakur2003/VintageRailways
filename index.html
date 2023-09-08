@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Generate your Ticket</title>
+	<link rel="stylesheet" href="https://classless.de/classless.css"
+	
+</head>
+<body >
+  <h1 >
+   Get a General Ticket
+  </h1>
+   <button onclick="msg()">disclaimer</button>
+  
+  
+  
+  <div>
+    
+    From : <input type="text" id="from" required />
+    To : <input type="text" id="to" required/>
+    Adults : <input type="number" id="adults" required/>
+    Children : <input type="number" id="children" required/>
+    Distance : <input type="number" id="dist" onkeyup="cupfare()" required/>
+    Fare : <input type="number" id="fare" disabled/>
+    Type : <select id="type">
+      <option value="me">MAIL / EXPRESS</option>
+      <option value="ord">ORDINARY</option>
+      <option value="sf">SUPERFAST</option>
+    </select>
+    
+      <button onclick="generateTicket()">Generate Ticket</button>
+    
+  </div>
+
+	<div id="cdiv" style="display:none">
+		<canvas id="ticket-container" width="400" height="300" ></canvas><br/>
+		<button onclick=""><a id="download">Download ticket</a></button>
+		
+	</div>
+	<img src="https://1.bp.blogspot.com/-rVj7BQjJDrs/YHQV88_S7UI/AAAAAAAAD9o/eZqJQ7RNlY4h366-SfnuAuQHfOCV0S1wACLcBGAsYHQ/s640/Sequence%2B02.gif" style="display:none" id="load">
+	  
+	</img>
+
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
